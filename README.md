@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install dev/bbk_cli/<formula>`
+`brew install granis/stuff/<formula>`
 
-Or `brew tap dev/bbk_cli` and then `brew install <formula>`.
+Or `brew tap granis/stuff` and then `brew install <formula>`.
 
 ## Documentation
 

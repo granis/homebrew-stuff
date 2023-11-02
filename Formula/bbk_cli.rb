@@ -2,16 +2,13 @@ class BbkCli < Formula
   desc "Unofficial formula for Bredbandskollen CLI"
   homepage "https://github.com/dotse/bbk"
   url "https://github.com/dotse/bbk/archive/refs/tags/BBK_CLI_1.2.tar.gz"
-  version "1.2"
   sha256 "dff38d1226844642891afcd869bfce2b9d0414c9507bacf156fb5849ab2ae8c5"
   license "GPL-2.0-or-later"
 
   depends_on "gnutls"
 
-  stable do
-    # update version string to match release tag
-    patch :DATA
-  end
+  # update version string to match release tag
+  patch :DATA
 
   def install
     chdir "src/cli" do

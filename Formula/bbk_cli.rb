@@ -1,10 +1,10 @@
 class BbkCli < Formula
   desc "Unofficial formula for Bredbandskollen CLI"
   homepage "https://github.com/dotse/bbk"
-  url "https://github.com/dotse/bbk/archive/refs/tags/BBK_CLI_1.2.tar.gz"
-  sha256 "dff38d1226844642891afcd869bfce2b9d0414c9507bacf156fb5849ab2ae8c5"
-  license "GPL-2.0-or-later"
-
+  url "https://github.com/dotse/bbk.git", 
+    revision: "471de44d052fe56f294e5536079185931efa856b"
+  license "MIT"
+  version "1.2"
   depends_on "gnutls"
 
   # update version string to match release tag

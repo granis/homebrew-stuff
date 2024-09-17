@@ -2,7 +2,7 @@ class BbkCli < Formula
   desc "Unofficial formula for Bredbandskollen CLI"
   homepage "https://github.com/dotse/bbk"
   url "https://github.com/dotse/bbk.git",
-    revision: "471de44d052fe56f294e5536079185931efa856b"
+    revision: "1a5f2870b48c3ec85be1c45c397992a218b0af77"
   version "1.2"
   license "MIT"
   depends_on "gnutls"

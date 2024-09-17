@@ -2,8 +2,7 @@ class SquashfsToolsNg < Formula
   desc "Set of tools and libraries for working with SquashFS images"
   homepage "https://github.com/AgentD/squashfs-tools-ng"
   url "https://github.com/AgentD/squashfs-tools-ng.git",
-    tag: "v1.3.0"
-  sha256 "0d6d0324daf7a7d8ed3fa9aa07ca4f2484907617ab23b9f933e8c98c550d1fbc"
+    tag: "v1.3.1"
   license "GPL-3.0-or-later"
 
   depends_on "autoconf" => :build

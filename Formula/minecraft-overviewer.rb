@@ -3,8 +3,8 @@ class MinecraftOverviewer < Formula
 
   desc "Generates maps of a minecraft-worlds"
   homepage "https://docs.overviewer.org/"
-  url "https://github.com/GregoryAM-SP/The-Minecraft-Overviewer/archive/refs/tags/v1.20.4.tar.gz"
-  sha256 "8b8e0ee8e397463310b57b1d9f7d992849d5da072bdb8360d654aded2fb0f8aa"
+  url "https://github.com/GregoryAM-SP/The-Minecraft-Overviewer/archive/refs/tags/1.21.0.tar.gz"
+  sha256 "e576bda1bdaf478eeb93ce30114acace6a3015a249c34090618ac72b5612a665"
   license "GPL-3.0-or-later"
 
   depends_on "numpy"
@@ -12,12 +12,12 @@ class MinecraftOverviewer < Formula
   depends_on "python@3.11"
 
   resource "pillow" do
-    url "https://files.pythonhosted.org/packages/f8/3e/32cbd0129a28686621434cbf17bb64bf1458bfb838f1f668262fefce145c/pillow-10.2.0.tar.gz"
-    sha256 "e87f0b2c78157e12d7686b27d63c070fd65d994e8ddae6f328e0dcf4a0cd007e"
+    url "https://files.pythonhosted.org/packages/cd/74/ad3d526f3bf7b6d3f408b73fde271ec69dfac8b81341a318ce825f2b3812/pillow-10.4.0.tar.gz"
+    sha256 "166c1cd4d24309b30d61f79f4a9114b7b2313d7450912277855ff5dfd7cd4a06"
   end
 
   def install
-    venv = virtualenv_create(libexec)
+    venv = virtualenv_create(libexec, "python3.11")
 
     resource("pillow").stage do
       cp "./src/libImaging/Imaging.h", buildpath

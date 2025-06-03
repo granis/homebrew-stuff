@@ -7,7 +7,6 @@ class BbkCli < Formula
   license "MIT"
   depends_on "gnutls"
 
-
   def install
     chdir "src/cli" do
       system "make", "GNUTLS=1"

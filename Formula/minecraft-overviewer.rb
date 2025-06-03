@@ -6,12 +6,12 @@ class MinecraftOverviewer < Formula
   sha256 "cabd6356315aed5d00a5cb37410edf365d8a925b3015bfedff535c8bfeb98cd4"
   license "GPL-3.0-or-later"
 
-  depends_on "pillow"
-  depends_on "python@3.13"
-  depends_on "python-setuptools" => :build
   depends_on "cmake" => :build # for numpy
   depends_on "meson" => :build # for numpy
   depends_on "ninja" => :build # for numpy
+  depends_on "python-setuptools" => :build
+  depends_on "pillow"
+  depends_on "python@3.13"
 
   on_linux do
     depends_on "patchelf" => :build # for numpy
@@ -42,6 +42,6 @@ class MinecraftOverviewer < Formula
   end
 
   test do
-    assert_match "Minecraft Overviewer 1.21.2-rc.2", shell_output("overviewer.py --version")
+    assert_match(/^Minecraft Overviewer \(Prerelease\) 1.21.2-rc.2/, shell_output("overviewer.py --version"))
   end
 end
